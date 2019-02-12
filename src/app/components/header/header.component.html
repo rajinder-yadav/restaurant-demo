@@ -1,3 +1,14 @@
-<p>
-  header works!
-</p>
+<div class="bg-color">
+  <div class="container pt-5 pb-5">
+    <div>
+      <ng-container ngif="title">
+        <h1>
+          {{title}}
+        </h1>
+      </ng-container>
+      <div *ngIf="text">
+        <p class="mt-5 text-width">{{text}}</p>
+      </div>
+    </div>
+  </div>
+</div>
