@@ -1,3 +1,6 @@
+/**
+ * Mock Topic data.
+ */
 export const TOPICS = [
   {
     title: 'Fichipizza',
