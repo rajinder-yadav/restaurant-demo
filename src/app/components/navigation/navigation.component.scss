@@ -1,17 +1,18 @@
-.bg-color {
-  background-color: #2f3ba1;
-}
-.menu-color {
+.bg-color, .menu-color {
   background-color: #2f3ba1;
 }
 .dropdown-item {
   color: white;
-  &:focus, &:hover {
+  &:focus,
+  &:hover {
     color: #2f3ba1;
   }
 }
-.navbar-brand {
-  img {
-    height: 40px;
+.navbar {
+  padding: 0;
+  .navbar-brand {
+    img {
+      height: 40px;
+    }
   }
 }
