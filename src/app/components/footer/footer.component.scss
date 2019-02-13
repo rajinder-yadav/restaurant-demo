@@ -1,0 +1,37 @@
+footer {
+  background-color: #afafaf;
+}
+h5 {
+  font-size: 0.8rem;
+}
+
+// Remove bullet style and indentation from unorder list.
+li {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+// Social Icon colour.
+.google-clr {
+  color: #d34836;
+}
+.fb-clr {
+  color: #3B5998;
+}
+.linkedin-clr {
+  color: #0077b5;
+}
+.yt-clr {
+  color: red;
+}
+.twitter-clr {
+  color: #1dcaff;
+}
+.links {
+  margin-left: 5rem;
+}
