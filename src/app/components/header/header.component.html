@@ -1,12 +1,14 @@
-<div class="bg-color">
-  <div class="container pt-5 pb-5">
-    <div>
-      <ng-container ngif="title">
-        <h1>{{title}}</h1>
-      </ng-container>
-      <ng-container *ngIf="text">
-        <p class="mt-5 body-text">{{text}}</p>
-      </ng-container>
+<header>
+  <div class="bg-color">
+    <div class="container pt-5 pb-5">
+      <div>
+        <ng-container ngif="title">
+          <h1>{{title}}</h1>
+        </ng-container>
+        <ng-container *ngIf="text">
+          <p class="mt-5 body-text">{{text}}</p>
+        </ng-container>
+      </div>
     </div>
   </div>
-</div>
+</header>
