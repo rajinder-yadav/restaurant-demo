@@ -2,13 +2,11 @@
   <div class="container pt-5 pb-5">
     <div>
       <ng-container ngif="title">
-        <h1>
-          {{title}}
-        </h1>
+        <h1>{{title}}</h1>
       </ng-container>
-      <div *ngIf="text">
-        <p class="mt-5 text-width">{{text}}</p>
-      </div>
+      <ng-container *ngIf="text">
+        <p class="mt-5 body-text">{{text}}</p>
+      </ng-container>
     </div>
   </div>
 </div>
