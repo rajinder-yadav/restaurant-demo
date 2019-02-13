@@ -1,3 +1,34 @@
-<p>
-  topic works!
-</p>
+<div class="d-flex justify-content-between mt-5 mb-3">
+  <!-- Flow ltr: Title, subtitle and text first, followed by Caption section. -->
+  <ng-container *ngIf="flow === 'ltr'">
+    <!-- Title, subtitle and text -->
+    <div class="mr-5">
+      <h2>{{title}}</h2>
+      <div *ngIf="subtitle !== undefined">
+        <h4>{{subtitle}}</h4>
+      </div>
+      <div class="text">{{text}}</div>
+      <p class="small"><a href="#">More &raquo;</a></p>
+    </div>
+    <!-- Caption -->
+    <div class="caption text-center align-self-center">
+      <h3>{{caption}}</h3>
+    </div>
+  </ng-container>
+  <!-- Flow rtl: Caption first, followed by Title, subtitle and text section. -->
+  <ng-container *ngIf="flow === 'rtl'">
+    <!-- Caption -->
+    <div class="caption text-center align-self-center">
+      <h3>{{caption}}</h3>
+    </div>
+    <!-- Title, subtitle and text -->
+    <div class="ml-5">
+      <h2>{{title}}</h2>
+      <div *ngIf="subtitle !== undefined">
+        <h4>{{subtitle}}</h4>
+      </div>
+      <div class="text">{{text}}</div>
+      <p class="small"><a href="#">More &raquo;</a></p>
+    </div>
+  </ng-container>
+</div>
