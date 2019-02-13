@@ -1,0 +1,11 @@
+<div>
+  <h2>Menu of the Day</h2>
+</div>
+<div class="row">
+  <div class="col-4" *ngFor="let food of menu">
+    <ry-menu-item
+      [title]="food.title"
+      [price]="food.price"
+      [img]="food.img">
+    </ry-menu-item></div>
+</div>
