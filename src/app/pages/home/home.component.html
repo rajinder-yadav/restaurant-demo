@@ -1,1 +1,13 @@
-<h1>Home</h1>
+<ry-header [title]="title" [text]="text"></ry-header>
+<div class="container">
+  <ng-container *ngFor="let topic of topics; index as i">
+    <ry-topic [flow]="i%2 ? 'rtl' : 'ltr'"
+              [title]="topic.title"
+              [subtitle]="topic.subtitle"
+              [text]="topic.text"
+              [caption]="topic.caption">
+    </ry-topic>
+    <div *ngIf="i !== topics.length - 1"><hr/></div>
+  </ng-container>
+  <ry-footer></ry-footer>
+</div>
